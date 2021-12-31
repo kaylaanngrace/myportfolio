@@ -1,0 +1,69 @@
+:root {
+    --primary-color:#434447;
+    --secondary-color: #91e2d7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* header - name has colored box around it */
+header {
+    padding: 20px 0px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {    
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+    margin: 0;
+    background-color: var(--secondary-color);
+    padding: 5px 5px 5px 70px;
+
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 10px 15px;
+}
+
+header nav {
+    margin: 7px 30px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    margin: 10px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+}
+/* nav bar style - :hover, underlined */
+
+/* section titles - on left side of page */
+
+/* projects - :hover with opacity over images */
+
+/* contact - in a row and underlined */ 
+
