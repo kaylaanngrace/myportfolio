@@ -59,7 +59,20 @@ header nav ul li a:hover {
     color: var(--secondary-color);
     border-radius: 15px;
 }
-
+/* hero style */
+.hero {
+    background-color: darkblue;
+    background-size: contain;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.hero-sub {
+    margin: 200px 30px 10px 10px;
+    padding: 5px;
+    background-color: var(--secondary-color);
+}
+/* content style */
 .content {
     display: flex;
     flex-wrap: wrap;
@@ -70,41 +83,46 @@ header nav ul li a:hover {
 .subtitle {
     display: flex;
 }
+
+.img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+img {
+    width: 300px;
+    height: 350px;
+    border-radius: 50%;
+}
 .section-title {
     font-size: 38px;
     color: var(--primarycolor);
+    padding: 5px;
 }
 
 .details {
     border-left: 3px solid var(--primary-color);
     width: 80%;
-    padding: 10px 10px 200px 10px;
+    padding: 10px 20px;
 }
 
-.details a {
-    text-decoration: none;
-    color: var(--secondary-color);
-    padding: 10px 15px;
-}
-
-.details nav {
-    margin: 7px 30px;
-}
-
-.details ul {
+/* contact - in a row and underlined */ 
+.contact-info ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     list-style: none;
 }
-.details ul li a {
+.contact-info ul li a {
     margin: 10px;
-    border-bottom: 3px solid var(--secondary-color);
+    border-bottom: 3px solid var(--primary-color);
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 
 /* projects - :hover with opacity over images */
 
-/* contact - in a row and underlined */ 
 
