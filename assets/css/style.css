@@ -55,8 +55,6 @@ header nav ul li a {
     border-bottom: 3px solid var(--secondary-color);
 }
 header nav ul li a:hover {
-    background: var(--primary-color);
-    color: var(--secondary-color);
     border-radius: 15px;
 }
 /* hero style */
@@ -84,7 +82,6 @@ header nav ul li a:hover {
 .hero img {
     width: 200px;
     height: 250px;
-    border-radius: 20%;
     border: 3px solid var(--primary-color);
 }
 
@@ -110,6 +107,7 @@ header nav ul li a:hover {
     border-left: 3px solid var(--primary-color);
     flex: 1;
     padding: 10px 20px;
+    font-size: 18px;
 }
 
 .projects {
@@ -119,17 +117,20 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
-    flex: 1;
-    
+    flex: 1; 
 }
 
 .project {
     margin: 10px;
-    padding: 20px 20px 10px 0px;
+    padding: 10px 0px;
+    height: 100px;
     flex: 1 0 40%;
     border: 3px solid var(--secondary-color);
     background-color: var(--primary-color);
     opacity: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
 }
 
 .project:hover {
@@ -140,18 +141,37 @@ header nav ul li a:hover {
     text-decoration: none;
 }
 
-.project p {
-    text-decoration: none;
+.project-text {
     color: var(--primary-color);
     background-color: var(--secondary-color);
-    padding: 5px;
+    padding-right: 10px;
     margin: 0;
     width: fit-content;
 }
 
+.project p {
+    font-size: 12px
+}
+
+
 .project-1 {
     flex: 1 0 90%;
     height: 400px;
+}
+
+.project-2 {
+
+}
+
+.project-3 {
+    
+}
+
+.project-4 {
+    
+}
+
+.project-5 {
 
 }
 
@@ -165,11 +185,15 @@ header nav ul li a:hover {
 }
 .contact-info ul li a {
     margin: 10px;
+    padding: 10px;
     border-bottom: 3px solid var(--primary-color);
     text-decoration: none;
     color: var(--primary-color);
 }
 
+.contact-info ul li a:hover {
+    border-radius: 15px;
+}
 
 
 
