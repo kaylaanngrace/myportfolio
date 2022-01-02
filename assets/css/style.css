@@ -63,14 +63,14 @@ header nav ul li a:hover {
 .hero {
     background-image: url(../images/blue.jpeg);
     background-size: cover;
-    background-position: center;
+    background-position: 10%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 .hero-sub {
-    margin: 20px;
-    padding: 5px;
+    margin: 200px 20px 10px 10px;
+    padding: 6px;
     background-color: var(--secondary-color);
 }
 
@@ -81,7 +81,7 @@ header nav ul li a:hover {
     padding: 10px;
     
 }
-img {
+.hero img {
     width: 200px;
     height: 250px;
     border-radius: 20%;
@@ -92,12 +92,12 @@ img {
 .content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
     margin: 20px;
 }
 
 .subtitle {
     display: flex;
+    flex: 0 0 20%;
 }
 
 .section-title {
@@ -108,8 +108,51 @@ img {
 
 .details {
     border-left: 3px solid var(--primary-color);
-    width: 80%;
+    flex: 1;
     padding: 10px 20px;
+}
+
+.projects {
+    border-left: 3px solid var(--primary-color);
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    flex: 1;
+    
+}
+
+.project {
+    margin: 10px;
+    padding: 20px 20px 10px 0px;
+    flex: 1 0 40%;
+    border: 3px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    opacity: 70%;
+}
+
+.project:hover {
+    opacity: 100%;
+}
+
+.project a {
+    text-decoration: none;
+}
+
+.project p {
+    text-decoration: none;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 5px;
+    margin: 0;
+    width: fit-content;
+}
+
+.project-1 {
+    flex: 1 0 90%;
+    height: 400px;
+
 }
 
 /* contact - in a row and underlined */ 
@@ -128,6 +171,5 @@ img {
 }
 
 
-/* projects - :hover with opacity over images */
 
 
