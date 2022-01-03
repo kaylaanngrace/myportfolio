@@ -166,12 +166,12 @@ header nav ul li a:hover {
 .project-1 a {
     height: 400px;
     background-image: url(../images/Run-Buddy.png);
-    background-size: 1100px;
+    background-size: 1500px;
 }
 
 .project-2 a {
     background-image: url(../images/Horiseon-2.png);
-    background-size: 450px;
+    background-size: 600px;
 }
 
 .project-3 a {
