@@ -22,6 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 header h1 {    
@@ -33,11 +34,6 @@ header h1 {
     padding: 5px 5px 5px 70px;
 }
 
-header a {
-    text-decoration: none;
-    color: var(--secondary-color);
-    padding: 10px 15px;
-}
 
 header nav {
     margin: 7px 30px;
@@ -52,7 +48,10 @@ header nav ul {
 }
 header nav ul li a {
     margin: 10px;
-    border-bottom: 3px solid var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);    
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 5px;
 }
 header nav ul li a:hover {
     border-radius: 15px;
@@ -96,6 +95,8 @@ header nav ul li a:hover {
 .subtitle {
     display: flex;
     flex: 0 0 20%;
+    justify-content: flex-end;
+    text-align: right;
 }
 
 .section-title {
@@ -122,8 +123,13 @@ header nav ul li a:hover {
     align-items: baseline;
     flex: 1; 
 }
-
 .project {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 40%;
+}
+
+.project a {
     margin: 10px;
     padding: 10px 0px;
     height: 100px;
@@ -136,7 +142,7 @@ header nav ul li a:hover {
     align-items: flex-end;
 }
 
-.project:hover {
+.project a:hover {
     opacity: 100%;
 }
 
@@ -159,22 +165,25 @@ header nav ul li a:hover {
 
 .project-1 {
     flex: 1 0 90%;
+}
+
+.project-1 a {
     height: 400px;
 }
 
-.project-2 {
+.project-2 a {
 
 }
 
-.project-3 {
+.project-3 a {
     
 }
 
-.project-4 {
+.project-4 a {
     
 }
 
-.project-5 {
+.project-5 a {
 
 }
 /* end of project style */
@@ -192,7 +201,7 @@ header nav ul li a:hover {
 }
 .contact-info ul li a {
     margin: 10px;
-    padding: 7px;
+    padding: 5px;
     border-bottom: 3px solid var(--primary-color);
     text-decoration: none;
     color: var(--primary-color);
@@ -226,16 +235,30 @@ header nav ul li a:hover {
     }
     .hero-sub {
         text-align: center;
-        width: 100%;
+        width: fit-content;
     }
-    .section-title {
-        width: 80%;
-    }
-    .project {
-        flex: 0 70%;
-    }
+
     .contact-info ul li {
         flex:  100%;
     }
 }
 
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .section-title {
+        font-size: 30px;
+        border-bottom: 3px solid var(--primary-color);
+    }
+}
+
+@media screen and (max-width: 565px) {
+    header nav ul li a {
+        font-size: 16px;
+    }
+    .section-title {
+        font-size: 22px;
+    }
+}
