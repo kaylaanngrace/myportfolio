@@ -39,6 +39,10 @@ header nav {
     margin: 7px 30px;
 }
 
+.navbar {
+
+}
+
 header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -230,7 +234,8 @@ header nav ul li a:hover {
         justify-content: center;
     }
     header nav ul li a {
-        font-size: 20px;
+        font-size: calc(16px + 0.55vw);
+
     }
     .hero-sub {
         text-align: center;
@@ -251,12 +256,13 @@ header nav ul li a:hover {
         font-size: 30px;
         border-bottom: 3px solid var(--primary-color);
     }
+    header nav ul li a {
+        margin: 30px;
+        padding: 0 20px;
+    }
 }
 
 @media screen and (max-width: 565px) {
-    header nav ul li a {
-        font-size: 16px;
-    }
     .section-title {
         font-size: 22px;
     }
