@@ -169,8 +169,9 @@ header nav ul li a:hover {
 
 .project-1 a {
     height: 400px;
-    background-image: url(../images/Run-Buddy.png);
-    background-size: 1500px;
+    background-image: url(../images/Taskinator.png);
+    background-size: 100%;
+    background-position: 60%;
 }
 
 .project-2 a {
@@ -179,7 +180,8 @@ header nav ul li a:hover {
 }
 
 .project-3 a {
-    
+    background-image: url(../images/Run-Buddy.png);
+    background-size: 500px;
 }
 
 .project-4 a {
