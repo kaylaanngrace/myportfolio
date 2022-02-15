@@ -169,7 +169,7 @@ header nav ul li a:hover {
 
 .project-1 a {
     height: 400px;
-    background-image: url(../images/Taskinator.png);
+    background-image: url(../images/covidTestingLocations.png);
     background-size: 100%;
     background-position: 60%;
 }
@@ -185,7 +185,8 @@ header nav ul li a:hover {
 }
 
 .project-4 a {
-    
+    background-image: url(../images/Taskinator.png);
+    background-size: 500px;
 }
 
 .project-5 a {
